@@ -1,15 +1,62 @@
+# =========================
+# Dataset
+# =========================
+data/raw/*
+!data/raw/.gitkeep
 
-data/raw/
-data/processed/
+data/processed/*
+!data/processed/.gitkeep
+
+data/ocr_cache/*
+!data/ocr_cache/.gitkeep
+
+# =========================
+# Model checkpoints
+# =========================
 models/*.pth
 models/*.pt
 models/*.ckpt
-outputs/
+models/*.bin
+models/*.safetensors
+
+# =========================
+# Generated outputs
+# =========================
+outputs/plots/*
+!outputs/plots/.gitkeep
+
+outputs/confusion_matrix/*
+!outputs/confusion_matrix/.gitkeep
+
+outputs/gradcam/*
+!outputs/gradcam/.gitkeep
+
+outputs/predictions/*
+!outputs/predictions/.gitkeep
+
+# =========================
+# Python
+# =========================
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
+
+# =========================
+# Environments / secrets
+# =========================
 .env
+.env.*
 venv/
 .venv/
+
+# =========================
+# Jupyter
+# =========================
 .ipynb_checkpoints/
+
+# =========================
+# OS files
+# =========================
 .DS_Store
 Thumbs.db

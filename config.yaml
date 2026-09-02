@@ -1,0 +1,28 @@
+project:
+  name: GenText-Forensics
+
+dataset:
+  name: RealText-V2
+  image_size: 224
+  num_classes: 2
+  classes:
+    - authentic
+    - forged
+
+training:
+  batch_size: 16
+  epochs: 10
+  learning_rate: 0.0001
+  num_workers: 2
+  seed: 42
+
+model:
+  architecture: efficientnet_b0
+  pretrained: true
+
+paths:
+  raw_data: data/raw
+  processed_data: data/processed
+  ocr_cache: data/ocr_cache
+  models: models
+  outputs: outputs

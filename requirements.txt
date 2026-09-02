@@ -1,0 +1,15 @@
+torch
+torchvision
+opencv-python
+pillow
+numpy
+pandas
+matplotlib
+scikit-learn
+tqdm
+transformers
+datasets
+accelerate
+grad-cam
+streamlit
+pyyaml
